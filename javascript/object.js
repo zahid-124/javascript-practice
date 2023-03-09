@@ -1,3 +1,19 @@
+// objects method
+
+const person ={
+    getFullName: function(){
+        return this.firstName + ' ' + this.lastName;
+    }
+}
+
+const person1 = {
+    firstName: "Zahid",
+    lastName: "Hasan",
+}
+console.log(person.getFullName.apply(person1));
+
+
+
 const obj ={
     name: {
         firstName: "Zahid",

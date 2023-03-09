@@ -1,9 +1,8 @@
 // Date methods
-let date = new Date();
+// const date  = new Date();
+// console.log(formatDate(date));
 
-console.log(formatDate(date)['day']);
-
-function formatDate(date) {
+const formatDate = function (date) {
     let d = new Date(date),
         month = '' + (d.getMonth() + 1),
         day = '' + d.getDate(),
@@ -30,3 +29,5 @@ function formatDate(date) {
     time['time'] = [hour, minute, second].join(':') + ' ' + mid;
     return  time;
 }
+
+module.exports = formatDate
