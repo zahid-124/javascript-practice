@@ -4,3 +4,7 @@ const formatDate = require("../javascript/date");
 test('testing', () => {
     expect(formatDate(new Date())).toBeTruthy;
 });
+// sample test case for formatDate function
+test('testing', () => {
+    expect(formatDate(new Date())).toBeTruthy;
+});
